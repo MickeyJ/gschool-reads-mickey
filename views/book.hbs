@@ -1,0 +1,16 @@
+
+<div class="row" style="border: 1px solid black">
+  <div class="col-md-4">
+    <h3>{{Book.book_name}}</h3>
+    <img src='{{Book.book_image_url}}' alt="#" class="img-rounded img-fluid" width="100%/4">
+  </div>
+  <div class="col-md-8">
+    <p>{{Book.book_description}}</p>
+    <ul>
+      {{#each Authors}}
+        <li>{{author_name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+

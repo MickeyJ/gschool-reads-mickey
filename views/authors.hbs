@@ -1,0 +1,17 @@
+{{#each Authors}}
+  <div class="row" style="border: 1px solid black">
+    <div class="col-md-4">
+      <h3>
+        <a class="" href="/authors/search/{{author_id}}">
+        {{author_name}}
+        </a >
+      </h3>
+      <img src='{{author_image_url}}' alt="#" class="img-rounded img-fluid" width="100%/4">
+    </div>
+    <div class="col-md-8">
+      <h3>{{author_info}}</h3>
+
+      <a class="btn btn-info" href="/authors/edit/{{author_id}}">Edit</a>
+    </div>
+  </div>
+{{/each}}

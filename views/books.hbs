@@ -1,0 +1,18 @@
+{{#each Books}}
+  <div class="row" style="border: 1px solid black">
+    <div class="col-md-4">
+      <h3>
+        <a href="/books/search/{{book_id}}">
+          {{book_name}}
+        </a >
+      </h3>
+      <img src='{{book_image_url}}' alt="#" class="img-rounded img-fluid" width="100%/4">
+    </div>
+    <div class="col-md-8">
+      <p>By 'Authors'</p>
+      <p>{{book_genre}}</p>
+      <p>{{book_description}}</p>
+      <a class="btn btn-info" href="/books/edit/{{book_id}}" >Edit</a >
+    </div>
+  </div>
+{{/each}}
