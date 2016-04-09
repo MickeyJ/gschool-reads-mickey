@@ -9,7 +9,7 @@ const bookApi = {
   },
   addBook: book =>{
     console.log(book);
-    return axios.post('', book)
+    return axios.post(`/books/new`, book)
   },
   editBook: book =>{
     console.log(book);

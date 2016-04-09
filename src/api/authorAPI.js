@@ -9,7 +9,7 @@ const authorApi = {
   },
   addAuthor: author =>{
     console.log(author);
-    return axios.post('', author)
+    return axios.post(`/authors/new`, author)
   },
   editAuthor: author =>{
     console.log(author);

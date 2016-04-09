@@ -42,6 +42,7 @@ class CreateBook extends Component{
     const book = {name, genre, description, image, authors};
     bookApi.addBook(book);
     this.name.value = '';
+    this.genre.value = '';
     this.description.value = '';
     this.image.value = '';
   }

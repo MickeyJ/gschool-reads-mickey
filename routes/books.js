@@ -116,7 +116,6 @@ router.get('/new', (req, res, next) =>{
 router.post('/new', (req, res, next) =>{
   dt.Book()
     .insert({
-      book_id: 7,
       book_name: req.body.name,
       book_genre: req.body.genre,
       book_image_url: req.body.image,
@@ -124,6 +123,7 @@ router.post('/new', (req, res, next) =>{
     })
     .returning('book_id')
     .then(newID =>{
+      console.log(newID);
       dt.BookAuthor()
         .insert({
           book_author_id: +newID,
